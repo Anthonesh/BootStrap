@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+</head>
+
+<body class="bg-white text-dark">
+    <div class="w-50 m-auto">
+        <div class="text-center">
+        <h2>Formulaire de départ</h2>
+        <p>Vous trouverez ci-dessous un exemple de formulaire entierement construit avec les commandes
+            de formulaire de boostrap. Chaque groupe de formulaire requis a un état de valisdation
+            qui peut etre déclenché en tentant de soumettre le formulaire sans le remplir.
+        </p>
+        </div>
+    </div>
+
+
+    <div class="row d-flex flex-row w-100">
+        <div class="col-md-1"></div>
+            <div class="col col-md-7">
+            <form class="ms-3">
+            <h4 class="mt-5">Adresse de facturation</h4>
+
+                <div class="form-row d-flex mt-3">
+                    <div class="col-md-5 ">
+                <label for="inputNom">Prenom</label>
+                <input type="name" class="form-control mt-3" id="inputName" aria-describedby="nameHelp" placeholder="Enter Prenom">
+                    </div>
+                    <div class="col-md-5 ">
+                <label for="inputFirstName">Nom de famille</label>
+                <input type="name" class="form-control mt-3" id="inputFirstName" placeholder="Nom de famille">
+                    </div>
+                </div>
+
+                <div class="form-row d-flex">
+                    <div class="col-md-10 mt-3">
+                    <label for="inputAge">Nom d'utilisateur</label>
+                    <div class="input-group mt-3">
+                        <div class="input-group-prepend">
+                        <div class="input-group-text me-4">@</div>
+                        </div>
+                        <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Username">
+                    </div>
+                    </div>
+                </div>
+                
+
+                <div class="form-group mt-3">
+                <div class="col-md-10">
+                    <label for="formSelect">Email</label>
+                    <input class="form-control mt-3" id="formSelect"  placeholder="you@email.com">
+                </div>
+                </div>
+                <div class="form-group mt-3">
+                <div class="col-md-10">
+                    <label for="formSelect">Adresse1</label>
+                    <input class="form-control mt-3" id="formSelect"  placeholder="1234, rue main">
+                </div>
+                </div>
+                <div class="form-group mt-3">
+                <div class="col-md-10">
+                    <label for="formSelect">Adresse2</label>
+                    <input class="form-control mt-3" id="formSelect"  placeholder="appartement ou maison">
+                </div>
+                </div>
+
+                <div class="form-row d-flex mt-3">
+                    <div class="col-md-4 me-3">
+                <label for="exampleFormControlSelect1">Pays</label>
+                <select class="form-select mt-3" id="exampleFormControlSelect1">
+                    <option>choisir...</option>
+                    <option>Espagne</option>
+                    <option>Maroc</option>
+                    <option>Italie</option>
+                    <option>Portugal</option>
+                </select>
+                </div>
+                <div class="col-md-4 me-3">
+                    <label for="exampleFormControlSelect1">Etat</label>
+                    <select class="form-select mt-3" id="exampleFormControlSelect1">
+                    <option>choisir...</option>
+                    <option>Espagne</option>
+                    <option>Maroc</option>
+                    <option>Italie</option>
+                    <option>Portugal</option>
+                    </select>
+                    </div>
+                    <div class="form-group">
+                    <div class="col-md-7">
+                        <label for="formSelect">ZIP</label>
+                        <input class="form-control mt-3" id="formSelect"  placeholder="123456">
+                    </div>
+                    </div>
+                </div>
+
+                <div class="border-black border-top border-down w-75 mt-3"></div>
+
+                <div class="form-check mt-3">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                    L'adresse de facturation est la même que celle de livraison
+                </label>
+                </div>
+                <div class="form-check ">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                    Enregistrez ces informations pour la prochaine fois 
+                </label>
+                </div>
+                <div class="border-black border-top border-down w-75 mt-3"></div>
+
+                <h4 class="mt-3">Paiements</h4>
+                <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                <label class="form-check-label" for="flexRadioDefault1">
+                    Carte de crédit
+                </label>
+                </div>
+                <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                <label class="form-check-label" for="flexRadioDefault1">
+                    Carte de débit
+                </label>
+                </div>
+                <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                <label class="form-check-label" for="flexRadioDefault1">
+                    Paypal
+                </label>
+                </div>
+
+                <div class="form-row d-flex mt-3">
+                <div class="col-md-5 ">
+                <label for="inputNom">Nom sur la carte</label>
+                <input type="name" class="form-control" id="inputName" aria-describedby="nameHelp" >
+                <p><small>Nom complet tel qu'il est affiché sur la carte</small></p>
+                </div>
+                <div class="col-md-5 ms-2 ">
+                <label for="inputFirstName">Numero de carte de crédit</label>
+                <input type="name" class="form-control" id="inputFirstName" >
+                </div>
+            </div>
+
+            <div class="form-row d-flex">
+                <div class="col-md-3 ">
+            <label for="inputNom">Expiration</label>
+            <input type="name" class="form-control" id="inputName" aria-describedby="nameHelp" >
+                </div>
+                <div class="col-md-3 ms-2 ">
+            <label for="inputFirstName">CVV</label>
+            <input type="name" class="form-control" id="inputFirstName" >
+                </div>
+            </div>
+
+            <div class="border-black border-top border-down w-75 mt-3"></div>
+
+            <button class="btn btn-primary w-75 mt-3 mb-3" type="submit">Continuer vers la caisse</button>
+
+        </form>
+        
+        </div>
+
+        <div class="col-md-3 ">
+            <div class="d-flex">
+            <h4 class="mt-5 text-primary">Votre panier &nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-3-circle-fill" viewBox="0 0 16 16">
+                <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0Zm-8.082.414c.92 0 1.535.54 1.541 1.318.012.791-.615 1.36-1.588 1.354-.861-.006-1.482-.469-1.54-1.066H5.104c.047 1.177 1.05 2.144 2.754 2.144 1.653 0 2.954-.937 2.93-2.396-.023-1.278-1.031-1.846-1.734-1.916v-.07c.597-.1 1.505-.739 1.482-1.876-.03-1.177-1.043-2.074-2.637-2.062-1.675.006-2.59.984-2.625 2.12h1.248c.036-.556.557-1.054 1.348-1.054.785 0 1.348.486 1.348 1.195.006.715-.563 1.237-1.342 1.237h-.838v1.072h.879Z"/>
+                </svg></h4>
+            </div>
+
+            <ul class="list-group">
+                <li class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="">
+                    <div class="">Nom de produit
+                    </div>
+                    Brêve description
+                    </div>
+                    <span>12 $</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-start">
+                    <div class="">
+                        <div class="">Deuxieme produit
+                        </div>
+                        Brêve description
+                        </div>
+                        <span>12 $</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-start">
+                        <div class="">
+                            <div class="">Troisième produit
+                            </div>
+                            Brêve description
+                            </div>
+                            <span>12 $</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-start text-success">
+                            <div class="">
+                                <div class="">Code promo
+                                </div>
+                                Brêve description
+                                </div>
+                                <span>- % $</span>
+                            </li>
+                <li class="list-group-item d-flex justify-content-between"><b>Total (USD)</b> <p><b>30 $</b></p></li>
+
+                <li class="list-group-item d-flex justify-content-evenly mt-3 h-50">
+                    <div class="form-row d-flex justify-content-evenly ">
+                        <label for="inputNom"></label>
+                        <input type="name" class="form-control h-50 mt-3" id="inputName" aria-describedby="nameHelp" placeholder="Code promo">
+                        <button class="btn btn-secondary w-50 mt-3 mb-3" type="submit">Echanger</button>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="col-md-1"></div>
+    </div>
+   
+</body>
+
+</html>
